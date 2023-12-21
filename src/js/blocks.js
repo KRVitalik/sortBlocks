@@ -16,7 +16,7 @@ sortedBlocks.sort((a, b) => b.width * b.height - a.width * a.height);
 
 function countWindowWidth(height) {
   if (container.scrollWidth <= totalWidth) {
-    // countHeight(height);
+    countHeight(height);
 
     totalWidth = 0;
   }
