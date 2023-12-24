@@ -52,9 +52,7 @@ function efficientPlacement(blocks, containerSize) {
       containerSize.width < totalWidth + block.width ||
       containerSize.width === totalWidth + block.width
     ) {
-      // if (blockCoordinates.left === 0) {
       countWindowWidth(sortedBlocks[0]);
-      // }
     } else if (containerSize.width - totalWidth > 0) {
       let freeSpace = containerSize.width - totalWidth;
     }
@@ -70,7 +68,6 @@ function efficientPlacement(blocks, containerSize) {
     });
   }
 
-  // console.log(blockCoordinates);
   const fullness =
     1 -
     (totalWidth * totalHeight) /
